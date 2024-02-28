@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Crud App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <!-- input fields -->
+    <div class=" col-6 m-auto">
+        <div class="input-group mb-3 mt-5">
+            <input type="text" class="form-control" placeholder="Add chapter" aria-label="Recipient's username" aria-describedby="button-addon2" id="input">
+            <button class="btn btn-outline-success " type="button" id="add_btn">Add</button>
+        </div>
+    </div>
+
+
+    <!--  list  -->
+
+    <div class="mt-5 m-auto col-6">
+
+        <ul id="parentList" class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+                <h3>Chapter 1</h3>
+                <div>
+                    <button class="btn btn-outline-success mlr-5" id="edit" onclick="edititem(this)">Edit</button>
+                    <button class="btn btn-outline-danger" id="delete" onclick="removeitem(this)">Delete</button>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/5df2e58af9.js" crossorigin="anonymous"></script> -->
+    <script src="/crud.js"></script>
+</body>
+
+</html>
